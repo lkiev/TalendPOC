@@ -42,7 +42,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:aM7YoAsZeueD4vS5rVGcbk0k8klNV8QxNRbXprta"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:EBvOVZXflM9kCUCHzoZqky7RkhT5FrbskmQvJosw"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -77,7 +77,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Mi1l4LTzRxmfDCUSJCiOXY0W+uy9M35Ufnrz/oeF"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:fU4gLr9QMZm8U5tFU/v8d8p4R3Ubf51mcfzmm6UN"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -121,7 +121,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;minilos&quot;"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;usermis&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:z2Z/Nas7AMxqr3+XKgQjJ7BZ0kv2bKeU0ogm+v9R7DVLcRBObrXtxoKfmg=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Dnqyj37g8S6S2pIUBrvrH16RK79rdT0Qjzv0siGzwO5a9/irLbRZ8060Lg=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
@@ -130,6 +130,7 @@
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <node componentName="tMysqlClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBClose_1"/>
@@ -146,13 +147,13 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:dTKvPnONk2t0YhM6zaxWHszZ5Q+IizxGH8XPyR7Y"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:A9IFahg6RN5cWic8OFm0s2DaAJ04QpGUq1d7h79U"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select  eform_inquiry.branchid, &#13;&#10;eform_inquiry.prospectid, &#13;&#10;eform_inquiry.OTRPRice, &#13;&#10;eform_inquiry.NTF,  &#13;&#10;eform_inquiry.status, &#13;&#10;eform_inquiry.status_process,&#13;&#10;status_Decision,&#13;&#10;CASE WHEN eform_inquiry.cancel_dtm IS NOT NULL THEN  'Cancel'&#13;&#10;WHEN ca_inquiry.ProspectID IS NOT NULL THEN IFNULL(ca_inquiry.ca_decision,'OnProcess')&#13;&#10;WHEN scorepro_inquiry.ProspectID IS NOT NULL THEN IFNULL(api_message_sco.result,'OnProcess')&#13;&#10;WHEN pefindo_inquiry.ProspectID IS NOT NULL THEN IFNULL(pefindo_inquiry.response_scoring,'OnProcess')&#13;&#10;WHEN dupcheck_inquiry.ProspectID IS NOT NULL THEN IFNULL(api_message_dup.result,'OnProcess')&#13;&#10;ELSE '' END StatusMinilos,&#13;&#10;CASE WHEN ca_inquiry.ProspectID IS NOT NULL THEN 'CA'&#13;&#10;WHEN scorepro_inquiry.ProspectID IS NOT NULL THEN 'Scorepro'&#13;&#10;WHEN pefindo_inquiry.ProspectID IS NOT NULL THEN 'Pefindo'&#13;&#10;WHEN dupcheck_inquiry.ProspectID IS NOT NULL THEN 'DupCheck'&#13;&#10;ELSE '' END ModulApproval,&#13;&#10;&#13;&#10;CASE WHEN eform_inquiry.cancel_dtm IS NOT NULL THEN 'Cancel'&#13;&#10;WHEN ca_inquiry.ProspectID IS NOT NULL THEN ca_inquiry.ca_decision_reason&#13;&#10;WHEN scorepro_inquiry.ProspectID IS NOT NULL THEN api_message_sco.reason&#13;&#10;WHEN pefindo_inquiry.ProspectID IS NOT NULL THEN api_message_pef.reason&#13;&#10;WHEN dupcheck_inquiry.ProspectID IS NOT NULL THEN api_message_dup.reason&#13;&#10;ELSE '' END StatusReason,&#13;&#10;&#13;&#10;CASE WHEN eform_inquiry.cancel_dtm IS NOT NULL THEN eform_inquiry.cancel_dtm&#13;&#10;WHEN ca_inquiry.ProspectID IS NOT NULL THEN ca_inquiry.dtm&#13;&#10;WHEN scorepro_inquiry.ProspectID IS NOT NULL THEN scorepro_inquiry.dtm_scoring&#13;&#10;WHEN pefindo_inquiry.ProspectID IS NOT NULL THEN pefindo_inquiry.dtm_ssi&#13;&#10;WHEN dupcheck_inquiry.ProspectID IS NOT NULL THEN dupcheck_inquiry.dtm&#13;&#10;ELSE eform_inquiry.DtmUpd END TglStatusMiniLOS,&#13;&#10;MONTH(eform_inquiry.DtmUpd) Bulan,&#13;&#10;eform_inquiry.DSR DSR,&#13;&#10;eform_inquiry.DtmUpd MinilosDate,&#13;&#10;eform_inquiry.ProspectID OrderID,&#13;&#10;CASE WHEN LEFT(eform_inquiry.ProspectID,2)='EF' THEN 'Eform'&#13;&#10;WHEN LEFT(eform_inquiry.ProspectID,2)='KP' THEN 'KPEkspress'&#13;&#10;WHEN LEFT(eform_inquiry.ProspectID,2)='NE' THEN 'Input Manual'&#13;&#10;ELSE LEFT(eform_inquiry.ProspectID,2) END ApplicationSource,&#13;&#10;eform_inquiry.IDNumber,&#13;&#10;eform_inquiry.LegalName CustomerName,&#13;&#10;eform_inquiry.BirthDate,&#13;&#10;dupcheck_inquiry.dtm TglDupcheck,&#13;&#10;user_dup.email UserDupcheck,&#13;&#10;api_message_dup.reason KonsumenStatus,&#13;&#10;api_message_dup.result ResultDupcheck,&#13;&#10;CASE WHEN dupcheck_inquiry.ProspectID IS NULL THEN 'Tidak' ELSE 'Ya' END IsDupcheck,&#13;&#10;pefindo_inquiry.dtm_ssi TglCekPefindo,&#13;&#10;user_pef.email UserPefindo,&#13;&#10;pefindo_inquiry.score NilaiPefindo,&#13;&#10;pefindo_inquiry.max_overdue MaxOvdPefindo,&#13;&#10;pefindo_inquiry.response_scoring ResultPefindo,&#13;&#10;CASE WHEN pefindo_inquiry.ProspectID IS NULL THEN 'Tidak' ELSE 'Ya' END IsPefindoChecking,&#13;&#10;scorepro_inquiry.dtm_scoring TglScorepro1,&#13;&#10;user_sco.email UserScorepro1,&#13;&#10;scorepro_inquiry.score_result NilaiSkor1,&#13;&#10;CASE WHEN scorepro_inquiry.ProspectID IS NULL THEN 'Tidak' ELSE 'Ya' END IsSkor1,&#13;&#10;pv_inquiry.DtmUpd TglPV,&#13;&#10;user_pv.email UserPV,&#13;&#10;pv_inquiry.Rekomendasi PVRecommend,&#13;&#10;pv_inquiry.HardContact Hardcontact,&#13;&#10;pv_inquiry.FatalReject FatalReject,&#13;&#10;CASE WHEN pv_inquiry.ProspectID IS NULL THEN 'Tidak' ELSE 'Ya' END IsPV,&#13;&#10;ca_inquiry.dtm_send_sms TglSMS,&#13;&#10;ca_inquiry.sms_result ResultSurvey,&#13;&#10;CASE WHEN ca_inquiry.dtm_send_sms IS NULL THEN 'Tidak' ELSE 'Ya' END IsSurvey,&#13;&#10;ca_inquiry.dtm TglScorepro2,&#13;&#10;user_ca.email UserScorepro2,&#13;&#10;ca_inquiry.scorepro2_scoring NilaiScorepro2,&#13;&#10;CASE WHEN ca_inquiry.ProspectID IS NULL THEN 'Tidak' ELSE 'Ya' END IsScorepro2,&#13;&#10;ca_inquiry.scorepro2_profession Profession&#13;&#10;&#13;&#10;FROM minilos.eform_inquiry&#13;&#10;LEFT OUTER JOIN minilos.dupcheck_inquiry ON dupcheck_inquiry.ProspectID=eform_inquiry.ProspectID&#13;&#10;LEFT OUTER JOIN minilos.member user_dup ON dupcheck_inquiry.user=user_dup.id_member&#13;&#10;LEFT OUTER JOIN minilos.api_message api_message_dup ON dupcheck_inquiry.code=api_message_dup.code&#13;&#10;LEFT OUTER JOIN minilos.pefindo_inquiry ON pefindo_inquiry.ProspectID=eform_inquiry.ProspectID&#13;&#10;LEFT OUTER JOIN minilos.member user_pef ON pefindo_inquiry.user=user_pef.id_member&#13;&#10;LEFT OUTER JOIN minilos.api_message api_message_pef ON pefindo_inquiry.response_code_scoring=api_message_pef.code&#13;&#10;LEFT OUTER JOIN minilos.scorepro_inquiry ON scorepro_inquiry.ProspectID=eform_inquiry.ProspectID&#13;&#10;LEFT OUTER JOIN minilos.api_message api_message_sco ON scorepro_inquiry.score_code=api_message_sco.code&#13;&#10;LEFT OUTER JOIN minilos.member user_sco ON scorepro_inquiry.user_scoring=user_sco.id_member&#13;&#10;LEFT OUTER JOIN minilos.pv_inquiry ON pv_inquiry.ProspectID=eform_inquiry.ProspectID&#13;&#10;LEFT OUTER JOIN minilos.member user_pv ON pv_inquiry.user=user_pv.id_member&#13;&#10;LEFT OUTER JOIN minilos.ca_inquiry ON ca_inquiry.ProspectID=eform_inquiry.ProspectID&#13;&#10;LEFT OUTER JOIN minilos.member user_ca ON ca_inquiry.user=user_ca.id_member&#13;&#10;where minilos.eform_inquiry. timestamp&gt;='2021-04-01 13:34:18'&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select  eform_inquiry.branchid, &#13;&#10;eform_inquiry.prospectid, &#13;&#10;eform_inquiry.OTRPRice, &#13;&#10;eform_inquiry.NTF,  &#13;&#10;eform_inquiry.status, &#13;&#10;eform_inquiry.status_process,&#13;&#10;status_Decision,&#13;&#10;CASE WHEN eform_inquiry.cancel_dtm IS NOT NULL THEN  'Cancel'&#13;&#10;WHEN ca_inquiry.ProspectID IS NOT NULL THEN IFNULL(ca_inquiry.ca_decision,'OnProcess')&#13;&#10;WHEN scorepro_inquiry.ProspectID IS NOT NULL THEN IFNULL(api_message_sco.result,'OnProcess')&#13;&#10;WHEN pefindo_inquiry.ProspectID IS NOT NULL THEN IFNULL(pefindo_inquiry.response_scoring,'OnProcess')&#13;&#10;WHEN dupcheck_inquiry.ProspectID IS NOT NULL THEN IFNULL(api_message_dup.result,'OnProcess')&#13;&#10;ELSE '' END StatusMinilos,&#13;&#10;CASE WHEN ca_inquiry.ProspectID IS NOT NULL THEN 'CA'&#13;&#10;WHEN scorepro_inquiry.ProspectID IS NOT NULL THEN 'Scorepro'&#13;&#10;WHEN pefindo_inquiry.ProspectID IS NOT NULL THEN 'Pefindo'&#13;&#10;WHEN dupcheck_inquiry.ProspectID IS NOT NULL THEN 'DupCheck'&#13;&#10;ELSE '' END ModulApproval,&#13;&#10;&#13;&#10;CASE WHEN eform_inquiry.cancel_dtm IS NOT NULL THEN 'Cancel'&#13;&#10;WHEN ca_inquiry.ProspectID IS NOT NULL THEN ca_inquiry.ca_decision_reason&#13;&#10;WHEN scorepro_inquiry.ProspectID IS NOT NULL THEN api_message_sco.reason&#13;&#10;WHEN pefindo_inquiry.ProspectID IS NOT NULL THEN api_message_pef.reason&#13;&#10;WHEN dupcheck_inquiry.ProspectID IS NOT NULL THEN api_message_dup.reason&#13;&#10;ELSE '' END StatusReason,&#13;&#10;&#13;&#10;CASE WHEN eform_inquiry.cancel_dtm IS NOT NULL THEN eform_inquiry.cancel_dtm&#13;&#10;WHEN ca_inquiry.ProspectID IS NOT NULL THEN ca_inquiry.dtm&#13;&#10;WHEN scorepro_inquiry.ProspectID IS NOT NULL THEN scorepro_inquiry.dtm_scoring&#13;&#10;WHEN pefindo_inquiry.ProspectID IS NOT NULL THEN pefindo_inquiry.dtm_ssi&#13;&#10;WHEN dupcheck_inquiry.ProspectID IS NOT NULL THEN dupcheck_inquiry.dtm&#13;&#10;ELSE eform_inquiry.DtmUpd END TglStatusMiniLOS,&#13;&#10;MONTH(eform_inquiry.DtmUpd) Bulan,&#13;&#10;eform_inquiry.DSR DSR,&#13;&#10;eform_inquiry.DtmUpd MinilosDate,&#13;&#10;eform_inquiry.ProspectID OrderID,&#13;&#10;CASE WHEN LEFT(eform_inquiry.ProspectID,2)='EF' THEN 'Eform'&#13;&#10;WHEN LEFT(eform_inquiry.ProspectID,2)='KP' THEN 'KPEkspress'&#13;&#10;WHEN LEFT(eform_inquiry.ProspectID,2)='NE' THEN 'Input Manual'&#13;&#10;ELSE LEFT(eform_inquiry.ProspectID,2) END ApplicationSource,&#13;&#10;eform_inquiry.IDNumber,&#13;&#10;eform_inquiry.LegalName CustomerName,&#13;&#10;eform_inquiry.BirthDate,&#13;&#10;dupcheck_inquiry.dtm TglDupcheck,&#13;&#10;user_dup.email UserDupcheck,&#13;&#10;api_message_dup.reason KonsumenStatus,&#13;&#10;api_message_dup.result ResultDupcheck,&#13;&#10;CASE WHEN dupcheck_inquiry.ProspectID IS NULL THEN 'Tidak' ELSE 'Ya' END IsDupcheck,&#13;&#10;pefindo_inquiry.dtm_ssi TglCekPefindo,&#13;&#10;user_pef.email UserPefindo,&#13;&#10;pefindo_inquiry.score NilaiPefindo,&#13;&#10;pefindo_inquiry.max_overdue MaxOvdPefindo,&#13;&#10;pefindo_inquiry.response_scoring ResultPefindo,&#13;&#10;CASE WHEN pefindo_inquiry.ProspectID IS NULL THEN 'Tidak' ELSE 'Ya' END IsPefindoChecking,&#13;&#10;scorepro_inquiry.dtm_scoring TglScorepro1,&#13;&#10;user_sco.email UserScorepro1,&#13;&#10;scorepro_inquiry.score_result NilaiSkor1,&#13;&#10;CASE WHEN scorepro_inquiry.ProspectID IS NULL THEN 'Tidak' ELSE 'Ya' END IsSkor1,&#13;&#10;pv_inquiry.DtmUpd TglPV,&#13;&#10;user_pv.email UserPV,&#13;&#10;pv_inquiry.Rekomendasi PVRecommend,&#13;&#10;pv_inquiry.HardContact Hardcontact,&#13;&#10;pv_inquiry.FatalReject FatalReject,&#13;&#10;CASE WHEN pv_inquiry.ProspectID IS NULL THEN 'Tidak' ELSE 'Ya' END IsPV,&#13;&#10;ca_inquiry.dtm_send_sms TglSMS,&#13;&#10;ca_inquiry.sms_result ResultSurvey,&#13;&#10;CASE WHEN ca_inquiry.dtm_send_sms IS NULL THEN 'Tidak' ELSE 'Ya' END IsSurvey,&#13;&#10;ca_inquiry.dtm TglScorepro2,&#13;&#10;user_ca.email UserScorepro2,&#13;&#10;ca_inquiry.scorepro2_scoring NilaiScorepro2,&#13;&#10;CASE WHEN ca_inquiry.ProspectID IS NULL THEN 'Tidak' ELSE 'Ya' END IsScorepro2,&#13;&#10;ca_inquiry.scorepro2_profession Profession,&#13;&#10;minilos.eform_inquiry.timestamp&#13;&#10;&#13;&#10;FROM minilos.eform_inquiry&#13;&#10;LEFT OUTER JOIN minilos.dupcheck_inquiry ON dupcheck_inquiry.ProspectID=eform_inquiry.ProspectID&#13;&#10;LEFT OUTER JOIN minilos.member user_dup ON dupcheck_inquiry.user=user_dup.id_member&#13;&#10;LEFT OUTER JOIN minilos.api_message api_message_dup ON dupcheck_inquiry.code=api_message_dup.code&#13;&#10;LEFT OUTER JOIN minilos.pefindo_inquiry ON pefindo_inquiry.ProspectID=eform_inquiry.ProspectID&#13;&#10;LEFT OUTER JOIN minilos.member user_pef ON pefindo_inquiry.user=user_pef.id_member&#13;&#10;LEFT OUTER JOIN minilos.api_message api_message_pef ON pefindo_inquiry.response_code_scoring=api_message_pef.code&#13;&#10;LEFT OUTER JOIN minilos.scorepro_inquiry ON scorepro_inquiry.ProspectID=eform_inquiry.ProspectID&#13;&#10;LEFT OUTER JOIN minilos.api_message api_message_sco ON scorepro_inquiry.score_code=api_message_sco.code&#13;&#10;LEFT OUTER JOIN minilos.member user_sco ON scorepro_inquiry.user_scoring=user_sco.id_member&#13;&#10;LEFT OUTER JOIN minilos.pv_inquiry ON pv_inquiry.ProspectID=eform_inquiry.ProspectID&#13;&#10;LEFT OUTER JOIN minilos.member user_pv ON pv_inquiry.user=user_pv.id_member&#13;&#10;LEFT OUTER JOIN minilos.ca_inquiry ON ca_inquiry.ProspectID=eform_inquiry.ProspectID&#13;&#10;LEFT OUTER JOIN minilos.member user_ca ON ca_inquiry.user=user_ca.id_member&#13;&#10;where minilos.eform_inquiry. timestamp&gt;='2020-04-01' and minilos.eform_inquiry. timestamp &lt;='2021-04-30'&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -259,6 +260,8 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Profession"/>
       <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Timestamp"/>
+      <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBInput_1">
@@ -310,6 +313,7 @@
       <column comment="" key="false" length="-1" name="NilaiScorepro2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="IsScorepro2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Profession" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Timestamp" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tBigQueryOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="192">
@@ -320,16 +324,16 @@
     <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
     <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="&quot;C:/Data/Google/Service Account Key/kreditplus-poc-1208031c6e95.json&quot;"/>
     <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:VL7BYQmUMhilJNocztUG9fFmeOPV/7hSdLgX3Nut"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:UsY0plrKd6kdR/LiIdNgRanWN8/zRO9MMUgdxIK4"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="&quot;kreditplus-poc&quot;"/>
-    <elementParameter field="TEXT" name="DATASET" value="&quot;dev&quot;"/>
+    <elementParameter field="TEXT" name="DATASET" value="&quot;poc&quot;"/>
     <elementParameter field="TEXT" name="TABLE" value="&quot;los_wg_offline&quot;"/>
     <elementParameter field="CHECK" name="CREATE_TABLE_IF_NOT_EXIST" value="true"/>
     <elementParameter field="CLOSED_LIST" name="ACTION_ON_DATA" value="TRUNCATE"/>
     <elementParameter field="CHECK" name="BULK_FILE_ALREADY_EXIST" show="false" value="false"/>
     <elementParameter field="TEXT" name="GS_ACCESS_KEY" value="&quot;GOOG22XFS6WVHZB5LHZPCDFI&quot;"/>
-    <elementParameter field="PASSWORD" name="GS_SECRET_KEY" value="enc:system.encryption.key.v1:xr3Iwg8VC84QrPE9hwa04JqpHQbQ+RH7z+ah6UbWsoVl0VivQmqgMoPqX0BcujXS0lasiyTH1/4ZEFbHrBCmeeCIBWheCg=="/>
+    <elementParameter field="PASSWORD" name="GS_SECRET_KEY" value="enc:system.encryption.key.v1:xeZYSLcgJvhwZOwDPD2Mhwpeg3VM6qZF6zQBkUwKBKUZNK5lAFtdOy255XiwHG1cYOQlLrU448aXnjniWf6lQJliY4CyQw=="/>
     <elementParameter field="TEXT" name="BUCKET_NAME" value="&quot;kreditplus_poc&quot;"/>
     <elementParameter field="TEXT" name="GS_FILE" value="&quot;gs://kreditplus_poc/minilos.csv&quot;"/>
     <elementParameter field="TEXT" name="GS_FILE_HEADER" value="0"/>
@@ -399,6 +403,7 @@
       <column comment="" key="false" length="-1" name="NilaiScorepro2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="IsScorepro2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Profession" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Timestamp" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="64">
@@ -410,6 +415,11 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tBigQueryOutput_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Timestamp"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
@@ -446,13 +456,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_366bb08f-52f4-41fc-be16-981fe6314aa3"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>HTSPYK2wGpHSgiKfIzC3lvKjyVdu0uUc6jGQxIuB7YaXc2z6HvKeR32vGGSjEBGZm6obVu2joU23&#13;
-0kkLTGeP2g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2617e666-03d3-4764-9715-c7e6c4232311"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>nEDxjD0nFQ+aECr5AhsVXVMGZCYuLL2rtdGIpxGQGjaBcAQb4cbhv6XSIz/O696oT/FD57jxnNqV&#13;
-0kWxi1joHw==</DigestValue></Reference></SignedInfo><SignatureValue>mMZtlGYtHNS+aXnUqTolSdtyips1RMMTkzC0HDSKbKlXI6Okh8b9t/3SVYXOE/1MU/vhQBpX8rkT&#13;
-3QR2Kb1jriCqo1B4C+2FgUsE58nzfC/F3U8r59auozirx+6EvaS/xKQryfP1kMatvGUXBQyiSQeR&#13;
-jtIsrC7bdWkwsUlcws0VVKr20H28D9NsgQgYGDXHktORD+m+641Wld7HqqNnsEMMjDAGkjeQcWt7&#13;
-EEwsS2T6DO4uXJetJRJlhFsbOl2DAeDrN6F3PmbLedCosdDZP3D4d220W6buhoF+uyBpTPW9Z/J7&#13;
-mNl4hQwasnuyDuF+AmC57F8Uo8kd6VM/e3flRw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9ca74994-575a-4a34-bafc-a0a6d46f3857"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>4duHowmx2QrqNmIh29mH6qL1AiJhBRrLcRoESYPQnkRlQEDfK2keuJ7CGO5dlOgC8So0sGwkyW3m&#13;
+FJe0NDbFgg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_65c2a3b7-bec5-413a-8ca2-7afb4ce83124"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>zrBHeyVnAupFZfP3/lI2eM368hLzmJ8E7hVh+EUmpnBDhn0ljrcwd3tz7JJOWZUBtQ1Scub9zdgE&#13;
+unrDzfXjng==</DigestValue></Reference></SignedInfo><SignatureValue>GeXodhkmtmorBL4el8g/kCdBTqL2jEkCW1OtshQL0EhASX0IF1fQFkfPVjCV16FUBG1Cp3r0d5Nl&#13;
+dibNOmtIrU7HrWLsm44KPs1Ou2I3IO9cwUWK76W1YIowvCbc0lKDr61il2HbQ8oVsAa3wZ6Qm2Qn&#13;
+EbbyR7pxKyA7qdIqIcMoNtTx0NiMSDKrFjA5emveY/aKnYQWRXDm1GavILUCg6pFLykPgwnMzHCv&#13;
+uN51+L0/iGDx4VEDd9Au6lu0uOGehNaIGnVPZ0Cp/BcGvfG52mh142HgzBxEbAUa62A99YzcMovz&#13;
+OtsgfNqcRlkiXko1t5MbmGOsaGbpY0bf+NW0Cg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -474,4 +484,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2617e666-03d3-4764-9715-c7e6c4232311" Target="#_366bb08f-52f4-41fc-be16-981fe6314aa3"><Timestamp>2021-08-03 14:48:17</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_65c2a3b7-bec5-413a-8ca2-7afb4ce83124" Target="#_9ca74994-575a-4a34-bafc-a0a6d46f3857"><Timestamp>2021-08-03 14:52:45</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
