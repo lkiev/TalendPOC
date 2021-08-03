@@ -42,7 +42,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:vKzjbiDdHDbaYfZavBAm/bdU900HXmkuFQfWGGG9"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:w1jF9BJEibnr9C5ArAkehXmw37XWUHYS1yf2Bw21"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -77,7 +77,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:g6Fe56lh8yndD6w8xRpnvS4f6EHLNy571TB5amIs"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:d4k7zsudRfSIxPmckknTr6PPopy4cqOCxoUP5P4R"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -121,7 +121,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;confins_dwh&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;usermis&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:tMxHOKONAyr1SzW1rFt+ibrWNE6PYMvaWysV8pXyh0YvjNBwxhOJE0f6nA=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:nr3LeUuLjFWzVFaYeleENSsVjdIuDku5poPuW8opw2K560zrjnw+c+xBWg=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -150,13 +150,13 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:HPdM1FnBroy88o43p1Pb6k4EnY1OY9yypftcoqKJ"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:uMGlAIIO4BhiyNJ84ZEGW80RZxxIxh5fnp8ZeJiN"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;declare @startDate datetime&#13;&#10;declare @endDate datetime&#13;&#10;set @startDate='1/1/2021' --tanggal awal sales&#13;&#10;set @endDate='1/31/2021' --tanggal akhir sales&#13;&#10;select    a.AgreementNo, pc.Name, a.golivedate,a.BranchID, BranchFullName BranchName, a.Posid, isnull(p.POSName, br.BranchFullName) Pos, &#13;&#10;a.AOID CMOID, be.EmployeeName CMOName, &#13;&#10;    a.TotalOTR,a.DownPayment,a.NTF,a.Tenor,&#13;&#10; at.Description AssetType, ags.AssettypeID&#13;&#10; from Agreement  a with (nolock)&#13;&#10;left join Customer  pc with (nolock) on  a.customerid=pc.customerid &#13;&#10;inner join AgreementAsset ags  with (nolock) on A.ApplicationID=ags.ApplicationID and a.BranchID=ags.BranchID and ags.AssetSeqNo=1&#13;&#10;inner join branch br with (nolock) on a.BranchID=br.BranchID&#13;&#10;left join BranchPOS p  with (nolock)on a.POSID=p.POSID&#13;&#10;left join branchemployee be with (nolock) on  a.AOID=be.EmployeeID and be.BranchID=a.BranchID&#13;&#10;left join AssetType at on ags.AssetTypeID=at.AssetTypeID&#13;&#10;where a.golivedate&gt;=@startDate and a.golivedate&lt;DATEADD(day,1,@endDate)&#13;&#10; &#13;&#10;order by a.golivedate asc&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;declare @startDate datetime&#13;&#10;declare @endDate datetime&#13;&#10;set @startDate='4/1/2020' --tanggal awal sales&#13;&#10;set @endDate='4/30/2021' --tanggal akhir sales&#13;&#10;select    a.AgreementNo, pc.Name, a.golivedate,a.BranchID, BranchFullName BranchName, a.Posid, isnull(p.POSName, br.BranchFullName) Pos, &#13;&#10;a.AOID CMOID, be.EmployeeName CMOName, &#13;&#10;    a.TotalOTR,a.DownPayment,a.NTF,a.Tenor,&#13;&#10; at.Description AssetType, ags.AssettypeID&#13;&#10; from Agreement  a with (nolock)&#13;&#10;left join Customer  pc with (nolock) on  a.customerid=pc.customerid &#13;&#10;inner join AgreementAsset ags  with (nolock) on A.ApplicationID=ags.ApplicationID and a.BranchID=ags.BranchID and ags.AssetSeqNo=1&#13;&#10;inner join branch br with (nolock) on a.BranchID=br.BranchID&#13;&#10;left join BranchPOS p  with (nolock)on a.POSID=p.POSID&#13;&#10;left join branchemployee be with (nolock) on  a.AOID=be.EmployeeID and be.BranchID=a.BranchID&#13;&#10;left join AssetType at on ags.AssetTypeID=at.AssetTypeID&#13;&#10;where a.golivedate&gt;=@startDate and a.golivedate&lt;DATEADD(day,1,@endDate)&#13;&#10; &#13;&#10;order by a.golivedate asc&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -224,16 +224,16 @@
     <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
     <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="&quot;C:/Data/Google/Service Account Key/kreditplus-poc-1208031c6e95.json&quot;"/>
     <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:mhSsMeVPDTyYooAu2yqZkdGBy/fls9iyuIRe5oL4"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:OthlFjIg7Z6bmaJrwg67iLrMr9wzK6Y+9drI+vHJ"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="&quot;kreditplus-poc&quot;"/>
-    <elementParameter field="TEXT" name="DATASET" value="&quot;dev&quot;"/>
+    <elementParameter field="TEXT" name="DATASET" value="&quot;poc&quot;"/>
     <elementParameter field="TEXT" name="TABLE" value="&quot;confins&quot;"/>
     <elementParameter field="CHECK" name="CREATE_TABLE_IF_NOT_EXIST" value="true"/>
     <elementParameter field="CLOSED_LIST" name="ACTION_ON_DATA" value="TRUNCATE"/>
     <elementParameter field="CHECK" name="BULK_FILE_ALREADY_EXIST" show="false" value="false"/>
     <elementParameter field="TEXT" name="GS_ACCESS_KEY" value="&quot;GOOG22XFS6WVHZB5LHZPCDFI&quot;"/>
-    <elementParameter field="PASSWORD" name="GS_SECRET_KEY" value="enc:system.encryption.key.v1:2i9xorh5wwuVW+pCIOB6dTaILUqCFhY2eC5Xgb9YhUScg9gHhPV+S4T5No8QVJzLs2ezS+Tho/k0c0PEYeuBJK7LDviGTw=="/>
+    <elementParameter field="PASSWORD" name="GS_SECRET_KEY" value="enc:system.encryption.key.v1:O08PMo5LDokatk01vkc6OE5O4zqGxUAcD/nu8boxxeDa6hZ1yViCgki3GGmED85T6bVXPCxxsfu3yJndhOORfnCvVO1gaw=="/>
     <elementParameter field="TEXT" name="BUCKET_NAME" value="&quot;kreditplus_poc&quot;"/>
     <elementParameter field="TEXT" name="GS_FILE" value="&quot;gs://kreditplus_poc/confins.csv&quot;"/>
     <elementParameter field="TEXT" name="GS_FILE_HEADER" value="0"/>
@@ -317,13 +317,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_bc41dc8e-0c9f-4d80-92cd-c59f336d5280"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>0FMD9yBQyouS9Cf0LUw6IhQfDzKD/0Y3W05g5XNkOG4OnjN2ZSLD+BLrR1r9TjUU+j4FiW5jd3HR&#13;
-tsWyldDFOQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_086e52a1-017f-42e5-b9e3-4957f40db98b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>gwqJrvQfAnky3oqPe004i2b+R7SHhs8IunV6bacVPZdVb2a5UgI1vCD++axFMsZA6MOb/5rskL3W&#13;
-6MonMZKwdw==</DigestValue></Reference></SignedInfo><SignatureValue>ecsXAjp7AI4i0VlNhXHVFSe9X8aRl8bcjSgjn0XoIQ+yRlrq7vMbOgI1qdc+ihN+EQaRtGZ8aXZ0&#13;
-gZMZXIYPCA6ckQ0C16mV3O/F3DBtGiFshgfCKnO+k257clLqQCJOwh+zI8/PYmNJUfdrY+iiG3po&#13;
-8xv5ZvjiGEU+Gp6YoGWrbCKh4jac097747o8tnTVmvJL8c5eHrJSH1qDEfbQjLoanZ2CfZIJTnsU&#13;
-PolQ9jTqt9VFn4SxrREZ+M0Lerw9yAThbyoJ+TRXz0iOe3KDyNFITP7CnTjoDKeRGS4D/IIgNntL&#13;
-AZrK/ZvVOxvzPaKgrIPgDYYqOfmb9i8uUaRotg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_df9efa50-f962-4806-9215-3961463458d2"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>MlRpKSDy5Y6gHrLKemLcZMWjo0xR108/p+QqqThQSENcMPD1d9KmyNV1letbSLg6KGOxJzuEtyeu&#13;
+W4TSGWAgBA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_0a1d1600-9058-488f-8372-18e5ede46a52"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>2WljipDD9H7yTTHlpFNER6mCQs0WfvFM7KDIt9Y1vL5jTDkHN/L4YWDO5Dg01uN2l4GArWu6RfuL&#13;
+8B48IX2zOg==</DigestValue></Reference></SignedInfo><SignatureValue>Nh13VwudYWIKctv8G1aN04PC7ySkd7thPjGzGXjqhGPh+orNzsvg3K/o0ddKxMOfkOpO7fIa0P+9&#13;
+/yE3z2Ech21wthIKXAaRyWUWXuXCkKnqcQfXgoOuGP6xD9kYVcKvvmn06AxK1g4O2M8NZ7kwt24/&#13;
+zwKYp5XCjQd2NJgF8pmCf0xTIHcL9tg4qD9602cP3KTh7RwBuA4g/b3t1Ews5YXzc88Rlct3cKpR&#13;
+MFhbfnUg0ggMovEzqrOAvobBgt0jO2ZMqioX2XGIzO6Uke3LN8VSs4xHQqsK+7sC5TLMfgAYt1D/&#13;
+EBS9X0WwdrTjQluoMVIRTbrgFP9sR+ZwOj8Vmg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -345,4 +345,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_086e52a1-017f-42e5-b9e3-4957f40db98b" Target="#_bc41dc8e-0c9f-4d80-92cd-c59f336d5280"><Timestamp>2021-08-03 15:42:03</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_0a1d1600-9058-488f-8372-18e5ede46a52" Target="#_df9efa50-f962-4806-9215-3961463458d2"><Timestamp>2021-08-03 15:43:36</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
