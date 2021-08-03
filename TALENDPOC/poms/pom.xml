@@ -22,7 +22,7 @@
     <module>jobs/process/poc/EFORM/job_eform_apr_oct_0.1</module>
     <module>jobs/process/poc/EFORM/job_eform_nov_apr_0.1</module>
     <module>jobs/process/poc/EFORM/job_eform_main_0.1</module>
-    <module>jobs/process/poc/MINILOS/test_los_wg_offline_copy1_0.1</module>
+    <module>jobs/process/poc/MINILOS/job_los_wg_offline_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
