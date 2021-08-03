@@ -19,6 +19,7 @@
     <module>jobs/process/test/test_staging_0.1</module>
     <module>jobs/process/test/test_confins_0.1</module>
     <module>jobs/process/poc/KPM/job_kpm__0.1</module>
+    <module>jobs/process/poc/EFORM/test_eform_copy_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
