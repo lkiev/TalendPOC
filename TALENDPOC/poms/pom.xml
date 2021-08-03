@@ -14,6 +14,7 @@
     <module>jobs/process/test/test_eform_0.1</module>
     <module>jobs/process/test/test_los_wg_offline_0.1</module>
     <module>jobs/process/test/test_los_kmb_0.1</module>
+    <module>jobs/process/test/test_los_wg_online_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
