@@ -27,7 +27,7 @@
     <module>jobs/process/poc/STAGING/job_staging_0.1</module>
     <module>jobs/process/poc/CONFINS/job_confins_0.1</module>
     <module>jobs/process/poc/KP_LOS/job_los_wg_online_1_0.1</module>
-    <module>jobs/process/poc/KP_LOS/job_los_wg_online_1_copy_0.1</module>
+    <module>jobs/process/poc/KP_LOS/job_los_wg_online_2_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
