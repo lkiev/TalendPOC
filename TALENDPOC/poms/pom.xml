@@ -30,6 +30,7 @@
     <module>jobs/process/poc/KP_LOS/job_los_wg_online_2_0.1</module>
     <module>jobs/process/poc/CONFINS/job_assettype_0.1</module>
     <module>jobs/process/poc/BRANCH/job_branch_0.1</module>
+    <module>jobs/process/test/test_view_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
