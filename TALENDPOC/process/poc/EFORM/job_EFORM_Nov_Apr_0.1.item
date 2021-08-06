@@ -42,7 +42,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:E41FPVu5dTn/yzR+DykI8lW8e5eBZ3AllItgnBPh"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:JcwYelx7m0pF5UZS62Fkc4jha54LN2w3fLleas09"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -77,7 +77,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:YMtu03jA87dmG0T/7iNnpLX+Cqu8O/6r91+EQSgz"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:eHxFBqdWPeKMAlJa6WKx752zP8dbCmn1wYn60dUD"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -121,7 +121,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;eform&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;usermis&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Cs1dU61xz+8A7cQBoKAfpE4AT1SsAmQhKUgks79bKleEsDd5/TWazidIxw=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:BVCvpntw4fQmnpF7txHU4HCsdBzZSaSnNkCZ05NA3zaJxhsjaVnhwDUkNQ=="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
@@ -157,13 +157,13 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:nezAnoi4aAKTr0wG1zuPfvQ7f8fYU3+A0uQ8xVzQ"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:ASTZtmW43iMIj9YN68l6jB8m62hl6zNxdOGsKOsn"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select \&quot;user_application\&quot;.\&quot;created_at\&quot;,&#13;&#10;\&quot;applications\&quot;.\&quot;OfferingType\&quot;  AssetType,&#13;&#10;\&quot;applications\&quot;.\&quot;DateStart\&quot;,&#13;&#10;\&quot;DateOfSync\&quot;,&#13;&#10;\&quot;user_application\&quot;.\&quot;date_of_submit_to_minilos\&quot;,&#13;&#10;\&quot;DateOfApprove\&quot; as PO_Date,&#13;&#10;\&quot;date_of_status\&quot;,&#13;&#10;\&quot;userIdPO\&quot;,&#13;&#10;concat(\&quot;idCA\&quot;.\&quot;first_name\&quot;,' ',\&quot;idCA\&quot;.\&quot;last_name\&quot;) as CA_Name,&#13;&#10;\&quot;idCRO\&quot;.\&quot;EmployeeID\&quot;,&#13;&#10;\&quot;idCRO\&quot;.\&quot;first_name\&quot; as CRO_name,&#13;&#10;\&quot;user_application\&quot;.\&quot;ApplicationId\&quot;,&#13;&#10;concat('`',\&quot;customers\&quot;.\&quot;IDNumber\&quot;) as IDNumber,&#13;&#10;\&quot;LegalName\&quot;,&#13;&#10;\&quot;status_applications\&quot;.\&quot;Name\&quot; as final_status,&#13;&#10;\&quot;application_report\&quot;.\&quot;assetCode\&quot;,&#13;&#10;\&quot;application_report\&quot;.\&quot;assetConfins\&quot;,&#13;&#10;\&quot;application_report\&quot;.\&quot;productOffering\&quot;,&#13;&#10;\&quot;application_report\&quot;.\&quot;supplier\&quot;,&#13;&#10;\&quot;SupplierID\&quot;,&#13;&#10;\&quot;application_report\&quot;.\&quot;total_financing\&quot;,&#13;&#10;\&quot;branch_name\&quot;,&#13;&#10;\&quot;user_application\&quot;.\&quot;ProspectID\&quot;,&#13;&#10;\&quot;status_cust_kreditmu\&quot;,&#13;&#10;\&quot;status_kreditmu\&quot;,&#13;&#10;financials.\&quot;TotalFinancing\&quot;&#13;&#10;FROM \&quot;public\&quot;.\&quot;user_application\&quot;&#13;&#10;join \&quot;applications\&quot; on \&quot;applications\&quot;.id = \&quot;user_application\&quot;.\&quot;ApplicationId\&quot;&#13;&#10;join \&quot;branch_locations\&quot; on \&quot;branch_locations\&quot;.id = \&quot;applications\&quot;.\&quot;BranchId\&quot;&#13;&#10;join \&quot;users\&quot; as \&quot;idCRO\&quot; on \&quot;idCRO\&quot;.id = \&quot;user_application\&quot;.\&quot;UserId\&quot;&#13;&#10;left join \&quot;users\&quot; as \&quot;idCA\&quot; on \&quot;idCA\&quot;.id = \&quot;applications\&quot;.\&quot;userIdPO\&quot;&#13;&#10;left join \&quot;status_applications\&quot; on \&quot;status_applications\&quot;.id = \&quot;user_application\&quot;.\&quot;StatusId\&quot;&#13;&#10;left join \&quot;application_report\&quot; on \&quot;application_report\&quot;.\&quot;ApplicationId\&quot; = \&quot;user_application\&quot;.\&quot;ApplicationId\&quot;&#13;&#10;join financials on financials.\&quot;ApplicationId\&quot; = user_application.\&quot;ApplicationId\&quot;&#13;&#10;join \&quot;master_assets\&quot; ON \&quot;master_assets\&quot;.\&quot;ApplicationId\&quot; = \&quot;applications\&quot;.\&quot;id\&quot; &#13;&#10;join \&quot;customers\&quot; on \&quot;customers\&quot;.id = \&quot;applications\&quot;.\&quot;CustomerId\&quot;&#13;&#10;where  \&quot;isDraft\&quot; = false and \&quot;user_application\&quot;.\&quot;isDelete\&quot; = false &#13;&#10;and \&quot;user_application\&quot;.\&quot;deleted_at\&quot; is null &#13;&#10;and date(\&quot;user_application\&quot;.\&quot;created_at\&quot;) between '2020-11-01'  and '2021-04-30' --tanggal masuk ke sistem&#13;&#10;--and  \&quot;applications\&quot;.\&quot;BranchId\&quot;='20'  -- hanya branch bekasi&#13;&#10;and \&quot;user_application\&quot;.\&quot;date_of_submit_to_minilos\&quot; is not null&#13;&#10;order by \&quot;user_application\&quot;.\&quot;created_at\&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select \&quot;user_application\&quot;.\&quot;created_at\&quot;,&#13;&#10;\&quot;applications\&quot;.\&quot;OfferingType\&quot;  AssetType,&#13;&#10;\&quot;applications\&quot;.\&quot;DateStart\&quot;,&#13;&#10;\&quot;DateOfSync\&quot;,&#13;&#10;\&quot;user_application\&quot;.\&quot;date_of_submit_to_minilos\&quot;,&#13;&#10;\&quot;DateOfApprove\&quot; as PO_Date,&#13;&#10;\&quot;date_of_status\&quot;,&#13;&#10;\&quot;userIdPO\&quot;,&#13;&#10;concat(\&quot;idCA\&quot;.\&quot;first_name\&quot;,' ',\&quot;idCA\&quot;.\&quot;last_name\&quot;) as CA_Name,&#13;&#10;\&quot;idCRO\&quot;.\&quot;EmployeeID\&quot;,&#13;&#10;\&quot;idCRO\&quot;.\&quot;first_name\&quot; as CRO_name,&#13;&#10;\&quot;user_application\&quot;.\&quot;ApplicationId\&quot;,&#13;&#10;concat('`',\&quot;customers\&quot;.\&quot;IDNumber\&quot;) as IDNumber,&#13;&#10;\&quot;LegalName\&quot;,&#13;&#10;\&quot;status_applications\&quot;.\&quot;Name\&quot; as final_status,&#13;&#10;\&quot;application_report\&quot;.\&quot;assetCode\&quot;,&#13;&#10;\&quot;application_report\&quot;.\&quot;assetConfins\&quot;,&#13;&#10;\&quot;application_report\&quot;.\&quot;productOffering\&quot;,&#13;&#10;\&quot;application_report\&quot;.\&quot;supplier\&quot;,&#13;&#10;\&quot;SupplierID\&quot;,&#13;&#10;\&quot;application_report\&quot;.\&quot;total_financing\&quot;,&#13;&#10;\&quot;branch_name\&quot;,&#13;&#10;\&quot;user_application\&quot;.\&quot;ProspectID\&quot;,&#13;&#10;\&quot;status_cust_kreditmu\&quot;,&#13;&#10;\&quot;status_kreditmu\&quot;,&#13;&#10;financials.\&quot;TotalFinancing\&quot;,&#13;&#10;\&quot;applications\&quot;.\&quot;BranchId\&quot;&#13;&#10;FROM \&quot;public\&quot;.\&quot;user_application\&quot;&#13;&#10;join \&quot;applications\&quot; on \&quot;applications\&quot;.id = \&quot;user_application\&quot;.\&quot;ApplicationId\&quot;&#13;&#10;join \&quot;branch_locations\&quot; on \&quot;branch_locations\&quot;.id = \&quot;applications\&quot;.\&quot;BranchId\&quot;&#13;&#10;join \&quot;users\&quot; as \&quot;idCRO\&quot; on \&quot;idCRO\&quot;.id = \&quot;user_application\&quot;.\&quot;UserId\&quot;&#13;&#10;left join \&quot;users\&quot; as \&quot;idCA\&quot; on \&quot;idCA\&quot;.id = \&quot;applications\&quot;.\&quot;userIdPO\&quot;&#13;&#10;left join \&quot;status_applications\&quot; on \&quot;status_applications\&quot;.id = \&quot;user_application\&quot;.\&quot;StatusId\&quot;&#13;&#10;left join \&quot;application_report\&quot; on \&quot;application_report\&quot;.\&quot;ApplicationId\&quot; = \&quot;user_application\&quot;.\&quot;ApplicationId\&quot;&#13;&#10;join financials on financials.\&quot;ApplicationId\&quot; = user_application.\&quot;ApplicationId\&quot;&#13;&#10;join \&quot;master_assets\&quot; ON \&quot;master_assets\&quot;.\&quot;ApplicationId\&quot; = \&quot;applications\&quot;.\&quot;id\&quot; &#13;&#10;join \&quot;customers\&quot; on \&quot;customers\&quot;.id = \&quot;applications\&quot;.\&quot;CustomerId\&quot;&#13;&#10;where  \&quot;isDraft\&quot; = false and \&quot;user_application\&quot;.\&quot;isDelete\&quot; = false &#13;&#10;and \&quot;user_application\&quot;.\&quot;deleted_at\&quot; is null &#13;&#10;and date(\&quot;user_application\&quot;.\&quot;created_at\&quot;) between '2020-11-01'  and '2021-04-30' --tanggal masuk ke sistem&#13;&#10;--and  \&quot;applications\&quot;.\&quot;BranchId\&quot;='20'  -- hanya branch bekasi&#13;&#10;and \&quot;user_application\&quot;.\&quot;date_of_submit_to_minilos\&quot; is not null&#13;&#10;order by \&quot;user_application\&quot;.\&quot;created_at\&quot;&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -227,6 +227,8 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="TotalFinancing"/>
       <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BranchID"/>
+      <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBInput_2">
@@ -245,10 +247,10 @@
       <column comment="" key="false" length="-1" name="idnumber" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LegalName" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="final_status" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="assetCode" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="assetConfins" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="productOffering" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="supplier" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="assetCode" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="assetConfins" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="productOffering" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="supplier" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="supplierID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="total_financing" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="branch_name" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -256,6 +258,7 @@
       <column comment="" key="false" length="-1" name="status_cust_kreditmu" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="status_kreditmu" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="TotalFinancing" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BranchID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tBigQueryOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="256">
@@ -266,7 +269,7 @@
     <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
     <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="&quot;C:/Data/Google/Service Account Key/kreditplus-poc-1208031c6e95.json&quot;"/>
     <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:uVzZXA81Vzg9184jiQ9kSY5VlWnYjJmhcWWhpOAC"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:LhbUKjxUgkkx6Lak8vfNR9XNi4h+3dqvq6+w7wVH"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="&quot;kreditplus-poc&quot;"/>
     <elementParameter field="TEXT" name="DATASET" value="&quot;poc&quot;"/>
@@ -275,7 +278,7 @@
     <elementParameter field="CLOSED_LIST" name="ACTION_ON_DATA" value="APPEND"/>
     <elementParameter field="CHECK" name="BULK_FILE_ALREADY_EXIST" show="false" value="false"/>
     <elementParameter field="TEXT" name="GS_ACCESS_KEY" value="&quot;GOOG22XFS6WVHZB5LHZPCDFI&quot;"/>
-    <elementParameter field="PASSWORD" name="GS_SECRET_KEY" value="enc:system.encryption.key.v1:MPzj2e97L3sWvboFKHZM3DoHoyMzP3yXJ9Lk5jHXks1sCMb48HTXbrdh60zl8fjroRc7pVpMQHt0Fnp59NXe97Lfm+JSSw=="/>
+    <elementParameter field="PASSWORD" name="GS_SECRET_KEY" value="enc:system.encryption.key.v1:XF2+O3lgXuIaCuYA9YCdVncsKWFDQ2U7u6RRE+Siijd2TlPVvrm1+UKy0zP7xzW0Laojs1oiQpNSASOzokZXbJt8aO5m5Q=="/>
     <elementParameter field="TEXT" name="BUCKET_NAME" value="&quot;kreditplus_poc&quot;"/>
     <elementParameter field="TEXT" name="GS_FILE" value="&quot;gs://kreditplus_poc/eform.csv&quot;"/>
     <elementParameter field="TEXT" name="GS_FILE_HEADER" value="0"/>
@@ -312,10 +315,10 @@
       <column comment="" key="false" length="-1" name="idnumber" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LegalName" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="final_status" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="assetCode" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="assetConfins" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="productOffering" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="supplier" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="assetCode" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="assetConfins" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="productOffering" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="supplier" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="supplierID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="total_financing" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="branch_name" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
@@ -323,6 +326,7 @@
       <column comment="" key="false" length="-1" name="status_cust_kreditmu" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="status_kreditmu" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="STRING" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="-1" name="TotalFinancing" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BranchID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="224">
@@ -432,6 +436,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
   </connection>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tBigQueryOutput_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="BranchID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
@@ -467,13 +476,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_dcaf4a94-14c1-4b60-aa62-22686552ba12"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Y9VQV+T1tKH+371mCBzlHr/jJ4juDvdgZcByRxxGPp2yz8nKZp7e8roScCtjqd18nARnYZihWp63&#13;
-CP0Vs7V/Zw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c6b764e6-4089-45c3-adf6-e2692f8b9c58"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>b6wJErV1+q+4R/48sLOZFgDGBV8RCRnFUqI7Ur/RrqjnsqzvVyG8q7AnZEkKy2aeCw5cdrE/KDJn&#13;
-qxA4qrftOw==</DigestValue></Reference></SignedInfo><SignatureValue>EupCL7ezOcwsy8dLkx9TeS9m0eVRJVXhZKFdtWBzdw5P92ySWfgG9jImVPg5MNBuQBUa8Dlllere&#13;
-rrEMdDJUhwPXaP293qldc3qmCpMXBlSX+49Vomy8M8L7FSUebzMDZJrNY6jHhLjr74T7xAc9Du5s&#13;
-ukRbcyy841cei/bMO2WZVNfBU6gMthIgZD6IiwtSTVfv7Wavy/0mj7Dcj1bx+eqjwfv2DXEM3nUs&#13;
-cbSc3opkDf/5Ysi2F8/hc/SGPPQTj2P8MC9kXipI6IU3qNLIOxcpoB6pW+bCjQvN+N9vIunDT3fs&#13;
-PjPCF3OEheg8I5MN12gMAX7Q6yj95lNCc9Rhmw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_71646f5d-24e9-491e-9c5c-8ad2a3839d1e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>kZxFXFe5VuTUshnB2/lqR9MfUOakAM2q9sfbghcKEEVjxsrydZj6Xhw8h+oTtKTt7GK+icMyRh9D&#13;
+2Ohm9P4rLQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_951ad6c5-0bc4-4b03-be0e-e65c55010afc"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>cjJ23pLkBV+IILk81dQ3gYAoHAPvRZ8HQcSVAhwHH/gTmgY1e81jkNIAexo/BJnS4gPjQIBvR9er&#13;
+dlQO4o5TYg==</DigestValue></Reference></SignedInfo><SignatureValue>IprLzyKawvOA8H6x4mweI52siA4cw5imp/RmK433G6ZG6bMkthTchQrwqi14C0dI160Hy6ma780Z&#13;
+OnYyWlRTIdrLj/DzLtk+kdbhp+ztpsluekhuh/uaRYmqGjItwuLk2Bqiwj76VrCAy8Q2qzAYITpJ&#13;
+YMd9L/wf+H9qpdieli8qc3X+7jB63Zg6sUY4G/iWp0GzEVZw41ZO5xa3B1Qa3OjWCzfvVdYYdMFI&#13;
+3zsw9d9HvGiWybo3LQ7PvARlYWna1n7qirYQX79xL6jIRiReTXRNLspnytxayq/vG5saKa6FBjui&#13;
+ND1L8fBD3rSa8MTb6AwbXPvIbBJwfDdbKVKZEQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -495,4 +504,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c6b764e6-4089-45c3-adf6-e2692f8b9c58" Target="#_dcaf4a94-14c1-4b60-aa62-22686552ba12"><Timestamp>2021-08-03 14:13:27</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_951ad6c5-0bc4-4b03-be0e-e65c55010afc" Target="#_71646f5d-24e9-491e-9c5c-8ad2a3839d1e"><Timestamp>2021-08-06 12:40:15</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
