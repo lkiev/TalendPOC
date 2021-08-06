@@ -42,7 +42,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:7yhpZNLp0rCU3f0wMtEpFfS3ibybrX+muFsH9+cP"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:sZ4sPy6lOk9sw4gd7y2lUCog2VRSg/iXlT3cBlZM"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -77,7 +77,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Ylofbb3DmdyxiOjVdjjhwQAuAZd/KQtjKO5vOiob"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:mveyxBN0gNLI/IUi9f2Bq0bFpmzz3KyvTikwz7Ua"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -118,7 +118,7 @@
     <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
     <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="&quot;C:/Data/Google/Service Account Key/kreditplus-poc-1208031c6e95.json&quot;"/>
     <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:nRKy7DGgOMrbpC/N/8q20cNmnoJJ0EAS+yBxEyEe"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:EJCdJHcTcj0xW9E4zZfz4I2ueXKda5eZcCZukbze"/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="&quot;kreditplus-poc&quot;"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="USE_LEGACY_SQL" value="false"/>
@@ -139,7 +139,7 @@
     <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
     <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="&quot;C:/Data/Google/Service Account Key/kreditplus-poc-1208031c6e95.json&quot;"/>
     <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:TuFMiMMSU4nnyZAZCUoCtW95rbGBfFyszjRibqTK"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:XasxgAfZ4op75CAYiRgVOlHcoAdR5gLWS816I6YO"/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="&quot;kreditplus-poc&quot;"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="USE_LEGACY_SQL" value="false"/>
@@ -168,11 +168,11 @@
     <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
     <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="&quot;C:/Data/Google/Service Account Key/kreditplus-poc-1208031c6e95.json&quot;"/>
     <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:Os4VMnEbs5wTE7c6d7DfBO2QSsiPoxpXyijasW/r"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:hUAJW+3w7j8vEAMDIv47SQk/6+yMVXs8p+UIRLr2"/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="&quot;kreditplus-poc&quot;"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="USE_LEGACY_SQL" value="false"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select id, name from employee&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select &#13;&#10;extract(date from minilosdate) as tanggal,&#13;&#10;orderid as order_id,&#13;&#10;case &#13;&#10;when decisionfinalapproval is not null then decisionfinalapproval&#13;&#10;else statusminilos&#13;&#10;end &#13;&#10;as status_approval,&#13;&#10;'KMB' as product,&#13;&#10;CASE WHEN totalexposure IS NULL THEN 0&#13;&#10;ELSE totalexposure END as amount_approval,&#13;&#10;branchid as branch_id,&#13;&#10;'LOS KMB' as sumber_los&#13;&#10;from `kreditplus-poc.poc.los_kmb`&quot;"/>
     <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="SMALL"/>
     <elementParameter field="FILE" name="TOKEN_NAME" show="false" value="&quot;C:/Talend/7.3.1/studio/workspace/token.properties&quot;"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
@@ -202,7 +202,7 @@
     <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="SERVICEACCOUNT"/>
     <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="&quot;C:/Data/Google/Service Account Key/kreditplus-poc-1208031c6e95.json&quot;"/>
     <elementParameter field="TEXT" name="CLIENT_ID" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:JWhuZjX72gNp/VmcQGSDtsSIJLSQ2OYzeUXoe04v"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" show="false" value="enc:system.encryption.key.v1:/6XQy06mvTLdDsWp+QEif52COG38WeOgj0BBVLQq"/>
     <elementParameter field="TEXT" name="AUTHORIZATION_CODE" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="PROJECT_ID" value="&quot;kreditplus-poc&quot;"/>
     <elementParameter field="TEXT" name="DATASET" value="&quot;poc_fin&quot;"/>
@@ -211,7 +211,7 @@
     <elementParameter field="CLOSED_LIST" name="ACTION_ON_DATA" value="TRUNCATE"/>
     <elementParameter field="CHECK" name="BULK_FILE_ALREADY_EXIST" show="false" value="false"/>
     <elementParameter field="TEXT" name="GS_ACCESS_KEY" value="&quot;GOOG22XFS6WVHZB5LHZPCDFI&quot;"/>
-    <elementParameter field="PASSWORD" name="GS_SECRET_KEY" value="enc:system.encryption.key.v1:ZCoDhdU5A5GUPiru022A/hqg8nALIkj2S+34mM+GLU9Rw73uPw2Te8H5UHgy1Z+zBkbOVM2J5RD83YDjOc1T2xIu6S7TVA=="/>
+    <elementParameter field="PASSWORD" name="GS_SECRET_KEY" value="enc:system.encryption.key.v1:IsJ0pifaxOXaSTSqeI4TdwXghaw8Trx2kQ9+eIDodIoAB2dspVzBloLE577gKt535qf3+dpd3id+VxhIZNMNMazdGupSbg=="/>
     <elementParameter field="TEXT" name="BUCKET_NAME" value="&quot;kreditplus_poc&quot;"/>
     <elementParameter field="TEXT" name="GS_FILE" value="&quot;gs://kreditplus_poc/approval.csv&quot;"/>
     <elementParameter field="TEXT" name="GS_FILE_HEADER" value="0"/>
@@ -261,13 +261,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_4a7c92ef-3c4d-4085-85be-08bc6566037a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>W0bqF5qDrIEsQYvgEXQQHq+8a1sYOJPXP46HY9mPNOkk7j0miOsKkNzapDqBGuO0FkXWDWC2FFPz&#13;
-OaMmLWMQwg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e619784b-9397-4ec9-92a7-d95ca998a923"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>JpMRDDtzXcPpQ0O29+rDsJK731Ge1zhklR1AyYudONfLgFOHh6wN9gfdsvvE7tNu9D8MKpNRGz4s&#13;
-WVFkAFLfzQ==</DigestValue></Reference></SignedInfo><SignatureValue>GrdMCEiXRNWPjFANEBFL3P2jp8c7kVAoD95yaR8JT/Rj7fb7T7cTVIrx2dB0s+HDxSMnGxjqGX6F&#13;
-Z6Diz7yhM+0PNrrTYYvPJwXbRptSfRZQqac297G+62xU19Dmqls8+XIV5CCIL380i8X4R6oQ31wm&#13;
-yKa77RtQa96K7qVGjmU8SZngXfcAXsMJSJvs5fK4pVDK9J0F0s4zcpQBFQ+261OzXQ8Jo7NpBc+N&#13;
-JgYPH+vEo9YhCUPeaCG4q9iBbGOMI8xglv/9K0J99VmQ6NCreZTNpM+NGnanvtmUuEOt1jLp7YIl&#13;
-EUMLG1Vw74fyx5c2TkQGxilSwkBuuhz7T0XqJw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3ce083b5-1dfd-45be-a174-eeea6d38ba10"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>pxTT7cbfg4Bu+BaRRuG7HFIYJDNfEoXTPYbr/y1YOotGqwSmtmLYfZuyz+gTIyGw9Kx0dwm6L8gg&#13;
+sDf890s/dQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_807f7b4a-629d-45b6-bf29-3f5fe469521c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>XtHedjEVRRx8ZCTZEXkk6qvomrbgjaR8mJilfe9JIV0hS8EXUJ7j/YN6LtuqstAH4AznRN1E8SWs&#13;
+jHY7DoK9JQ==</DigestValue></Reference></SignedInfo><SignatureValue>gug06v8imKbxl5ZGmO6bcj9wN22jCIBYFIGhc1c1vm4KF/EUri4LwDsn5autmtbrIjcC0sPe33NB&#13;
+tWTDFvfuFVFMlAo/xim/PJDe+KxeVm/W2W3xApQxbJFEF40KgP4iJPORepGkvVQifVuFiGGV26JZ&#13;
+879/M5Tf2GGBe559r/kiEfAS0VBKPvYy5LRGlPlC5ykx3Ay8u0zTmeqBtAh9L9q+a0xKzYaKejbD&#13;
+qYjXfIv0JVYKjl0giUOKKqmTrHA/uu+L5lPaeu5NTKa5MV1vmwDUnq2qZjeUChcRprq0+a6BxLm8&#13;
+tTBDSguqlJ5Zi20Pfk6MEjtciNw8VuZR5r8mCQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -289,4 +289,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e619784b-9397-4ec9-92a7-d95ca998a923" Target="#_4a7c92ef-3c4d-4085-85be-08bc6566037a"><Timestamp>2021-08-06 11:58:08</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_807f7b4a-629d-45b6-bf29-3f5fe469521c" Target="#_3ce083b5-1dfd-45be-a174-eeea6d38ba10"><Timestamp>2021-08-06 11:58:53</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
