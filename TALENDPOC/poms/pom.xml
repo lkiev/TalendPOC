@@ -33,6 +33,13 @@
     <module>jobs/process/test/test_view_0.1</module>
     <module>jobs/process/poc_fin/job_approval_0.1</module>
     <module>jobs/process/poc_fin/job_dm_confins_0.1</module>
+    <module>jobs/process/TDQ_Examples/jd_4_consolidateaccounts_0.1</module>
+    <module>jobs/process/TDQ_Examples/jd_6_consolidatecustomers_0.1</module>
+    <module>jobs/process/TDQ_Examples/jd_2_standardizetitle_0.1</module>
+    <module>jobs/process/TDQ_Examples/jd_1_parsename_0.1</module>
+    <module>jobs/process/TDQ_Examples/js_runall_0.1</module>
+    <module>jobs/process/TDQ_Examples/jd_3_parseaccountdescription_0.1</module>
+    <module>jobs/process/TDQ_Examples/jd_5_deduplicate_crm_customers_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
